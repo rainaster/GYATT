@@ -1,0 +1,3 @@
+#workskin .GayArialMT {
+  font-family: 'GayArial';
+}
