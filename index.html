@@ -10,15 +10,27 @@
 <title>GYATT: GaY Arial True Type font</title>
 </head>
 <body>
+  <!--This is the title-->
   <h1>GYATT: GaY Arial True Type font</h1>
-  <div class="container">
-    <!-- multi-line input field for text (users can input text). -->
-    <textarea id="inputText" placeholder="Enter text here."></textarea>
-    <textarea class="GYATT" id="outputText" placeholder="Converted text will appear here..." readonly></textarea>
+  <h2>This is the description of what GYATT is for.</h2>
+  <h3>This is the instructions.</h3>
+    <div class="container">
+    <div class="input container">
+      <h3>Input Text</h3>
+      <textarea id="inputText" placeholder="Enter text here."></textarea>
+    </div>
+    <div class="output container">
+      <h3>Converted Text</h3>
+      <textarea id="outputText" placeholder="Converted text will appear here..." readonly></textarea>
+    </div>
   </div>
   <button onclick="convertText()">Convert Text</button>
   <script src="GYATT.js"></script>
   
-  <div class="GYATT"> meow meow meow meow </div>
+  <div class="container">
+    <h3>GYATT Font Preview</h3>
+    <textarea id="outputText" readonly></textarea>
+  </div>
 </body>
 </html>
+

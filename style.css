@@ -5,14 +5,39 @@
       url("/fonts/gayarialmt-webfont.woff2") format("woff");
 }
 
-body {
-font-family: Arial;
-padding: 1rem;
-font-size: 0.75rem;
+.container {
+  display: flex;
+  justify-content: space-around; /* Adjusts the spacing between the two containers */
 }
 
-body > * {
-margin-bottom: 1.5em;
+.input-container,
+.output-container {
+  width: 45%; /* Adjust width accordingly */
+  display: flex;
+  flex-direction: column; /* Makes the h3 and textarea stack vertically */
+}
+
+textarea {
+  height: 150px; /* Adjust height accordingly */
+  padding: 8px;
+  box-sizing: border-box; /* Ensures padding doesn't add to the width */
+}
+
+button {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
 
 .GYATT {
