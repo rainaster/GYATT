@@ -1,173 +1,25 @@
+@font-face {
+  font-family: "GaY Arial True Type font";
+  src: url("/fonts/GayArialMT.ttf") format("truetype"),
+      url("/fonts/gayarialmt-webfont.woff") format("woff"),
+      url("/fonts/gayarialmt-webfont.woff2") format("woff");
+}
+
 body {
-    font-family: Arial;
-    padding: 1rem;
-    font-size: 2.75rem;
-  }
-  
-  body > * {
-    margin-bottom: 1.5em;
-  }
-  
-  /**
-   * Link
-   */
-  
-  a {
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  /**
-   * Nudge
-   */
-  
-  .nudge {
-    display: inline-block;
-    transition: transform 0.25s ease;
-  }
-  
-  .nudge:hover {
-    transform: translateY(0.1em);
-  }
-  
-  /**
-   * Button
-   */
-  
-  button {
-    font: inherit;
-    padding: 0.25em 0.5em;
-    border: 0;
-    border-radius: 1rem;
-    background-color: blue;
-    color: white;
-    transition: all 0.2s;
-  }
-  
-  button:hover {
-    background-color: red;
-    border-radius: 100%;
-    cursor: wait;
-  }
-  
-  /**
-   * Rotating
-   */
-  
-  .animation {
-    width: 10rem;
-    height: 10rem;
-    background: red;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: rotate 1s ease infinite;
-    animation-play-state: paused;
-  }
-  
-  .animation:hover {
-    animation-play-state: running;
-    cursor: not-allowed;
-  }
-  
-  @keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
-  /**
-   * Clock
-   */
-  
-  .clock {
-    width: 200px;
-    height: 200px;
-    border: 8px solid black;
-    border-radius: 50%;
-    position: relative;
-  }
-  
-  .hand {
-    position: absolute;
-    bottom: 50%;
-    left: 50%;
-    transform-origin: bottom;
-    background: black;
-  }
-  
-  .hour {
-    width: 4px;
-    height: 50px;
-    animation: rotateHand 43200s infinite linear;
-  }
-  
-  .minute {
-    width: 4px;
-    height: 70px;
-    animation: rotateHand 3600s infinite linear;
-  }
-  
-  .second {
-    width: 2px;
-    height: 80px;
-    background: red;
-    animation: rotateHand 60s infinite linear;
-  }
-  
-  @keyframes rotateHand {
-    from { 
-      transform: translateX(-50%) rotate(0deg); 
-    }
-    to { 
-      transform: translateX(-50%) rotate(360deg);
-    }
-  }
-  
-  .hour.pop {
-    animation: rotateHand 43200s steps(12) infinite;
-  }
-  
-  .minute.pop {
-    animation: rotateHand 3600s steps(60) infinite;
-  }
-  
-  .second.pop {
-    animation: rotateHand 60s steps(60) infinite;
-  }
-  
-  /**
-   * Wavy
-   */
-  
-  .wavy {
-    display: flex;
-  }
-  
-  .wavy span {
-    display: inline-block;
-    animation: wave 1.5s infinite ease-in-out;
-  }
-  
-  @keyframes wave {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-0.25em); }
-  }
-  
-  /* Apply staggered delays */
-  .wavy span:nth-child(1) { animation-delay: 0s; }
-  .wavy span:nth-child(2) { animation-delay: 0.1s; }
-  .wavy span:nth-child(3) { animation-delay: 0.2s; }
-  .wavy span:nth-child(4) { animation-delay: 0.3s; }
-  .wavy span:nth-child(5) { animation-delay: 0.4s; }
-  .wavy span:nth-child(6) { animation-delay: 0.5s; }
-  .wavy span:nth-child(7) { animation-delay: 0.6s; }
-  .wavy span:nth-child(8) { animation-delay: 0.7s; }
-  .wavy span:nth-child(9) { animation-delay: 0.8s; }
+font-family: Arial;
+padding: 1rem;
+font-size: 0.75rem;
+}
+
+body > * {
+margin-bottom: 1.5em;
+}
+
+.GYATT {
+/*font-family: Courier;*/
+font-family: "GaY Arial True Type font", sans-serif;
+/*
+padding: 1rem;
+font-size: 2.75rem;
+*/
+}

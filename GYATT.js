@@ -31,14 +31,14 @@ function gay_cipher(in_txt) {
     
     const keys = Object.keys(cipher);
     
-    let out_txt = ""
+    let out_txt = "";
     
     for (let letter of in_txt) {
         if (keys.includes(letter)) {
-            out_txt += cipher[letter]
+            out_txt += cipher[letter];
         } else {
-            out_txt += letter
+            out_txt += letter;
     }
     }
-    return out_txt
+    return out_txt;
 }
