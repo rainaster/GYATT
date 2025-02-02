@@ -9,17 +9,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GYATT: GaY Arial True Type font</title>
 </head>
-
 <body>
-<body style="background-color:LavenderBlush;">
+<body style="background-color:powderblue;">
 
-  <!--This is the title-->
-  <h1 style="background-color:Lavender;"> GYATT: GaY Arial True Type font</h1>
-  <h2> GYATT is for protecting writers from AI by exploiting web crawlers.</h2>
-  <h3> Insert desired text and then copy the output to Ao3. Paste the output on your draft. More instructions can be found at the link below. </h3>
-   
-<!--This is the link to our github-->
-  <a href="https://github.com/rainaster/GYATT" font-size: 400px; text-decoration: none> Our Github! </a>
+<!--This is the title-->
+  <h1>GYATT: GaY Arial True Type font</h1>
+  <h2>This is the description of what GYATT is for.</h2>
+  <h3>This is the instructions.</h3>
     <div class="container">
     <div class="input container">
       <h3>Input Text</h3>
@@ -33,10 +29,9 @@
   <button onclick="convertText()">Convert Text</button>
   <script src="GYATT.js"></script>
   
-  <!-- div class="container" -- >
-    <!-- h3>GYATT Font Preview</h3-- >
-    <!-- textarea id="outputText" readonly></textarea -->
+  <div class="container">
+    <h3>GYATT Font Preview</h3>
+    <textarea id="outputText" readonly></textarea>
   </div>
 </body>
 </html>
-
