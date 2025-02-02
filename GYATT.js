@@ -23,6 +23,6 @@ function gay_cipher(in_txt) {
             out_txt += letter;
     }
     }
-    out_txt = "<span class=\"GayArialMT\">" + out_txt + "</span>"
+    out_txt = "<span class=\"GayArialMT\">" + out_txt + "</span>";
     return out_txt;
 }
